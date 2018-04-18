@@ -1,8 +1,12 @@
+.postbird-box-container{
+    font-size: 24px;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .postbird-box-container {
     width: 100%;
@@ -25,7 +29,8 @@
 }
 
 .postbird-box-content {
-    width: 400px;
+    /*width: 400px;*/
+    width: 80%;
     max-width: 90%;
     background-color: #fff;
     position: absolute;
@@ -47,7 +52,7 @@
     width: 100%;
     padding: 20px 15px 20px;
     position: relative;
-    font-size: 1.4em;
+    font-size: 1.2em;
     letter-spacing: 2px;
     text-align: center;
 }
@@ -78,9 +83,10 @@
 .postbird-box-cap {
     width: 100%;
     padding: 0 10%;
+    margin-top: 10px;
     text-align: left;
     line-height: 1.6;
-    font-size: 1em;
+    font-size: 0.8em;
     letter-spacing: 1px;
     color: #F81717;
     display: none;
@@ -98,7 +104,8 @@
 }
 
 .postbird-box-footer .btn-footer {
-    line-height: 2.4;
+    /*line-height: 2.4;*/
+    padding: 0.6em 0;
     border: 0;
     cursor: pointer;
     background-color: #fff;
@@ -142,7 +149,7 @@
 
 .postbird-prompt-input {
     width: 100%;
-    font-size: 16px;
+    font-size: 1em;
     border: 1px solid #cccccc;
     outline: none;
     padding:5px 10px 5px 10px;
@@ -193,5 +200,29 @@
     100%{
         margin-top: 0;
         opacity: 1;
+    }
+}
+@media screen and (min-width: 980px){
+    .postbird-box-container{
+        font-size: 20px;
+    }
+    .postbird-box-content{
+        width: 400px;
+    }
+    .postbird-box-header{
+        font-size: 0.8em;
+    }
+    .postbird-box-text{
+        font-size: 1em;
+    }
+    .postbird-box-footer .btn-footer{
+        font-size: 1em;
+        /*line-height: 2;*/
+    }
+    .postbird-prompt-input{
+        font-size: 1em;
+    }
+    .postbird-box-cap{
+        font-size: 0.6em;
     }
 }
